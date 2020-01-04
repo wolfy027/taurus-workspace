@@ -1,0 +1,18 @@
+scalar: my scalar value
+
+number_scalar: 42
+
+boolean_scalar: true
+
+dictionary:
+  element1: value1
+  element2: value2
+
+list_of_dictionaries:
+- list_element1: list value 1
+- list_element21: list value 21
+  list_element22: list value 22
+
+list_of_values:
+- value1
+- value2

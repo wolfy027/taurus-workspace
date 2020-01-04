@@ -1,0 +1,25 @@
+execution:
+- executor: jmeter
+  concurrency: 10
+  hold-for: 1m
+  ramp-up: 10s
+  scenario: homepage
+- executor: jmeter
+  scenario: demoblaze_cart
+  concurrency: 10
+  hold-for: 1m
+  ramp-up: 10s
+- executor: jmeter
+  scenario: 
+    script: ./build-web-test-plan.jmx
+
+scenarios:
+  homepage:
+    retrieve-resources: false
+    requests:
+        - https://www.demoblaze.com/
+  demoblaze_cart:
+    requests:
+        - https://www.demoblaze.com/cart.html
+  script_example:
+    script: /script.jmx      
